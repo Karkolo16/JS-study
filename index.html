@@ -30,28 +30,30 @@
                 "currency": "PLN"
         }
     }
-        function makeBankAccount () {
-            return{
-                balance: "0",
-                deposit: function (amonut){
-                    this.balance +=anount
-                    return this.balance;
-                },
-
-            withdraw: function(amount){
-                if(amount > this.balance){
-                    amount = this.balance;}
-
+        class BankAccount {
+            constructor(){
+                this.balance = "0"
+            }
+            deposit(amount){
+                this.deposit += amount
+                return this.deposit;
+            }
+            withdraw(amonut){
+                this.withdraw 
+                amount = Math.min(amount, this.balance);
                     this.balance -= amount;
                     return amount
-                },
-            currentBalance: function(){
-                return this.balance;
             }
-            } 
+            currentBalance () {
+                return this.balance
+            }
 
-
+            console.log(deposit)
         }
+
+
+
+        
         </script>
     </body>
 </html>
