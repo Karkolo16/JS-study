@@ -2,35 +2,7 @@
 <html>
     <body>
         <script>
-        const user = {
-            name: "Kuba",
-            surname: "Xinski",
-            address: {
-                country:"pl",
-                city: "warsaw",
-                postal:"98-908",
-                street:"St Streeet"
-            }
-        }
-        const book = {
-            release: "2019",
-            title: "Karpie bijem"
-        }
-
-        console.log(user.surname)
-
-        const shoeStore = {
-            "name": "AirMax720",
-            "brand": "Nike",
-            "description": "Those are the best bla bla",
-            "size": "45",
-            "image": "sdadqwd",
-            "price": {
-                "value":"649.99",
-                "currency": "PLN"
-        }
-    }
-        class BankAccount {
+     class BankAccount {
             constructor(){
                 this.balance = "0"
             }
@@ -47,11 +19,30 @@
             currentBalance () {
                 return this.balance
             }
-
-            console.log(deposit)
         }
 
+    const users = [
+        {firstName:"kowalski", lastName:"marian"},
+        {firstName: "nowak", lastName: "Jan"},
+        { firstName: "Filip", secondName: "Polki",lastName: "Pajac"}
+    ];
 
+    function toFullNames(users){
+        return users.map(function(user){
+            if(user.secondName){
+                return user.firstName + " "+user.secondName + user.lastName;
+            } else {
+                return user.firstName + user.lastName;
+            }
+        })
+    }    
+
+        const fullNames = toFullNames(users);
+        fullNames.forEach(
+            function(name){
+                console.log(name)
+            }
+        );
 
         
         </script>
