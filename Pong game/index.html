@@ -6,6 +6,27 @@
             const canvas = document.getElementById("gameCanvas");
             const ctx = canvas.getContext ("2d");
 
+        // Constants
+            const CANVAS_HEIGHT = canvas.height; // height of the canvas
+            const CANVAS_WIDTH = canvas.width; // width of the canvas
+
+            const BOARD_Y = 50; // y both points
+            const BOARD_P1_X = 300; // x for player 1 scores
+            const BOARD_P2_X = 500; // x for player 2 scores
+
+            const PADDLE_WIDTH = 20; // width of the paddle
+            const PADDLE_HEIGHT = 100; // height of the paddle
+            const PADDLE_P1_X = 10; // position of the player one paddle
+            const PADDLE_P2_X = 770; // position of the player two paddle
+            const PADDLE_START_Y = (CANVAS_HEIGHT - PADDLE_HEIGHT) / 2; // start position for paddles y
+            const BALL_R = 15; // radius of the ball
+            const BALL_START_X = CANVAS_WIDTH / 2; // start position for ball x
+            const BALL_START_Y = CANVAS_HEIGHT / 2;// start position for ball y
+            const BALL_START_DX = 4.5;// start speed for ball x 
+            const BALL_START_DY = 1.5;// start speed for ball y
+
+    const STATE_CHANGE_INTERVAL = 20;
+
             ctx.font = "30px Arial";
             function drawText(text, x, y){
                 ctx.fillText(text, x, y);
