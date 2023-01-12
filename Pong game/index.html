@@ -15,8 +15,15 @@
                 ctx.fillRect (x, y, 20, 100)
             }
 
-            drawText("", 300, 50);
-            drawText("", 500, 50)
+            function drawCircle(x, y, r){
+                ctx.beginPath();
+                ctx.arc(x, y, r, 0, Math.PI * 2, true);
+                ctx.closePath();
+                ctx.fill();
+            }
+
+            drawText("2", 300, 50);
+            drawText("4", 500, 50)
             drawPaddle(770, 100);
             drawPaddle(10, 200);
         </script>
