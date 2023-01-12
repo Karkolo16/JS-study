@@ -21,11 +21,19 @@
             }
         }
 
-    const users = [
+
+        const users = [
         {firstName:"kowalski", lastName:"marian"},
         {firstName: "nowak", lastName: "Jan"},
         { firstName: "Filip", secondName: "Polki",lastName: "Pajac"}
     ];
+
+    const fullNames = toFullNames(users);
+        fullNames.forEach(
+            function(name){
+                console.log(name)
+            }
+        );
 
     function toFullNames(users){
         return users.map(function(user){
@@ -37,12 +45,8 @@
         })
     }    
 
-        const fullNames = toFullNames(users);
-        fullNames.forEach(
-            function(name){
-                console.log(name)
-            }
-        );
+    const times = (a,b) => a + b;
+
 
         
         </script>
