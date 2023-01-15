@@ -131,10 +131,18 @@
                 } else if (p2Action === DOWN_ACTION) {
                     p2PaddleY = coercePaddle(p2PaddleY + PADDLE_STEP);
                 }
-    }
+            }
+            function moveBallByStep() {
+                ballX += ballDX;
+                ballY += ballDY;
+            }
 
+            function moveBall() {
+                moveBallByStep();
+            }
             function updateState() {
                 movePaddles()
+                moveBall();
             }
             
             function drawState() {
