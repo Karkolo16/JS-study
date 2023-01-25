@@ -26,6 +26,7 @@ function start(){
 
     for (let i=0; i<= 34; i++){
         inside_div = inside_div + '<div class="letter">A</div>';
+        if( (i+1)% 7 == 0) inside_div = inside_div + '<div style="clear:both"</div>'
     }
 
     document.getElementById("alphabet").innerHTML = inside_div;
