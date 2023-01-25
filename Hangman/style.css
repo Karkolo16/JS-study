@@ -32,3 +32,11 @@ width:450px;
 text-align: center;
 min-height: 280px;
 }
+
+.letter{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
