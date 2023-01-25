@@ -22,7 +22,13 @@ window.onload = start;
 
 function start(){
 
-    document.getElementById("alphabet").innerHTML = "";
+    let inside_div ="";
+
+    for (let i=0; i<= 34; i++){
+        inside_div = inside_div + '<div class="letter">A</div>';
+    }
+
+    document.getElementById("alphabet").innerHTML = inside_div;
 
     write_password();
 
