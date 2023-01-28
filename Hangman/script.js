@@ -63,7 +63,8 @@ function start(){
     let inside_div ="";
 
     for (let i=0; i<= 34; i++){
-        inside_div = inside_div + '<div class="letter">'+letters[i]+'</div>';
+        let element = "lett" + i;
+        inside_div = inside_div + '<div class="letter" onclick ="check('+i+')" id="'+element+'">'+letters[i]+'</div>';
         if( (i+1)% 7 == 0) inside_div = inside_div + '<div style="clear:both"</div>'
     }
 
@@ -71,4 +72,22 @@ function start(){
 
     write_password();
 
+}
+
+// function changing "_" to letter
+
+String.prototype.changeSign = function(place, sign){
+    if(place > this.length - 1)return this.toString();
+    else return this.substring(0, place) + sign + this.substring(place+1); //substr - can change one letter 
+}
+
+
+function check(no){
+    
+    for (let i=0; i<sizePassword; i++){
+        if (password.charAt(i) == letters [no]){
+            password1 = password1.changeSign(i, letters[no]);
+        }
+    }
+write_password()
 }
