@@ -63,7 +63,7 @@ function start(){
     let inside_div ="";
 
     for (let i=0; i<= 34; i++){
-        inside_div = inside_div + '<div class="letter">A</div>';
+        inside_div = inside_div + '<div class="letter">'+letters[i]+'</div>';
         if( (i+1)% 7 == 0) inside_div = inside_div + '<div style="clear:both"</div>'
     }
 
