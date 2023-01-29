@@ -120,6 +120,13 @@ function check(no){
     //win
     if(password == password1 )
     document.getElementById("alphabet").innerHTML = "Congrats you won!: " + password + '<br></br><span class="reset" onclick = "location.reload()"> One more time?<span>';
-    }
+    
+    //losing
+    if(incorrect>=9)
+    document.getElementById("alphabet").innerHTML = "You lose " + password + '<br></br><span class="reset" onclick = "location.reload()"> One more time?<span>';
+
+
+}
+
 
 
