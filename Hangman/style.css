@@ -50,3 +50,13 @@ min-height: 280px;
     color: white;
     border: 3px solid white ;
 }
+
+.reset{
+    color: green;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.reset:hover{
+    color:white;
+}
