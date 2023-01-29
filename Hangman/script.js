@@ -83,11 +83,21 @@ String.prototype.changeSign = function(place, sign){
 
 
 function check(no){
-    
+
+    let correct = false
+
     for (let i=0; i<sizePassword; i++){
         if (password.charAt(i) == letters [no]){
             password1 = password1.changeSign(i, letters[no]);
+            correct = true
         }
     }
-write_password()
+    if(correct ==true){
+
+    write_password()
+
+    } else {
+
+    }
+
 }
