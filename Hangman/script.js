@@ -108,11 +108,13 @@ function check(no){
     document.getElementById(element).style.color = "#C00000";
     document.getElementById(element).style.border = "3px solid #C00000";
 
+    document.getElementById(element).setAttribute("onclick", ";");
+
     // incorrect letter add jpg
 
     incorrect++;
-    let picture = "img/s" + incorrect + ".jpg"
-    document.getElementById("hang").innerHTML = '<img src="'+ picture + '"alt="/>';
+    let picture = "img/s" + incorrect + ".jpg";
+    document.getElementById("hang").innerHTML = '<img src="'+ picture + '"alt=""/>';
     
     }
 
