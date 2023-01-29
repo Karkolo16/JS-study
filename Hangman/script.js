@@ -4,6 +4,7 @@ let password = "Bez pracy nie ma kolaczy";
 password = password.toUpperCase();
 
 let sizePassword = password.length;
+let incorrect = 0;
 
 let password1 = "";
 // loop that hide password for us
@@ -106,6 +107,13 @@ function check(no){
     document.getElementById(element).style.background = "#330000";
     document.getElementById(element).style.color = "#C00000";
     document.getElementById(element).style.border = "3px solid #C00000";
+
+    // incorrect letter add jpg
+
+    incorrect++;
+    let picture = "img/s" + incorrect + ".jpg"
+    document.getElementById("hang").innerHTML = '<img src="'+ picture + '"alt="/>';
+    
     }
 
 }
