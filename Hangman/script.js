@@ -115,7 +115,11 @@ function check(no){
     incorrect++;
     let picture = "img/s" + incorrect + ".jpg";
     document.getElementById("hang").innerHTML = '<img src="'+ picture + '"alt=""/>';
-    
     }
 
-}
+    //win
+    if(password == password1 )
+    document.getElementById("alphabet").innerHTML = "Congrats you won!: " + password + '<br></br><span class="reset" onclick = "location.reload()"> One more time?<span>';
+    }
+
+
