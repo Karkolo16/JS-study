@@ -34,3 +34,7 @@ body{
     padding: 16px;
     display: block;
 }
+
+.navbar-links li:hover{
+    background-color: #555;
+}
