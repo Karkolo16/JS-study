@@ -1,7 +1,9 @@
 'use strict'
 
-function changeColor (){
 
-    document.getElementById('button').style.color = '#000';
+const box = document.querySelector('.box');
+const button = document.getElementById('button');
 
-}
+button.addEventListener('click', function (){
+    box.style.backgroundColor= "blue";
+})
