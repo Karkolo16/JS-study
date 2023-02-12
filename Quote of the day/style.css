@@ -1,0 +1,26 @@
+body{
+    font-family: 'Albert Sans', sans-serif;
+    background-color: whitesmoke;
+}
+
+.btn{
+    border:10px solid green;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn:hover{
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.quote{
+    text-align: center;
+}
+h1{
+    margin: auto;
+}
