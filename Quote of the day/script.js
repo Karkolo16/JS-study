@@ -3,18 +3,33 @@
 let quoteArray = [
 
     {
-        "author":"Karolina",
-        "quote":"abcde fgh abecadlo."
+        "author":"Helen Rowland",
+        "quote":"You will never win if you never begin."
 
     },
     {
-        "author":"Karolina Koala",
-        "quote":"alfabet."
+        "author":"Nelson Mandela",
+        "quote":"Education is the most powerful weapon which you can use to change the world."
 
     },
     {
-        "author":"Karolina Strus",
-        "quote":"YOLO"
+        "author":"Benjamin Franklin",
+        "quote":"An investment in knowledge pays the best interest."
+
+    },
+    {
+        "author":"Mahatma Ghandi",
+        "quote":"Live as if you were to die tomorrow. Learn as if you were to live forever."
+
+    },
+    {
+        "author":"Les Brown",
+        "quote":"You are never too old to set another goal or to dream a new dream."
+
+    },
+    {
+        "author":"Colin Powell",
+        "quote":"There are no secrets to success. It is the result of preparation, hard work, and learning from failure."
 
     }
 
