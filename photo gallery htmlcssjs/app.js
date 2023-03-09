@@ -1,0 +1,4 @@
+'use strict'
+
+const thumbnail = document.querySelector(".thumbnail img");
+
