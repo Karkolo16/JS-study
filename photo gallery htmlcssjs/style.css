@@ -15,5 +15,15 @@ body{
 h1{
     text-align: center;
     font-size: 96px;;
-    
+
+}
+
+.thumbnail{
+    max-height: 200px;
+    max-width: 300px;
+}
+
+.thumbnail img{
+    height: 100%;
+    width: 100%;
 }
