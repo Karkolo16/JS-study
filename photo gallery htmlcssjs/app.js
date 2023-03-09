@@ -1,7 +1,5 @@
 'use strict'
 
-const thumbnail = document.querySelector(".thumbnail img");
+const thumbnails = document.querySelectorAll(".thumbnail img");
 
-thumbnail.addEventListener('click', () => {
-    
-});
+thumbnails.forEach(() => {});
