@@ -10,6 +10,9 @@ body{
     color: white;
     min-height: 100vh;
     min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1{
@@ -20,16 +23,19 @@ h1{
 
 .gallery{
     display: flex;
-    object-fit: cover;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .thumbnail{
     max-height: 200px;
     max-width: 300px;
+    margin: 32px;
 }
 
 .thumbnail img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
