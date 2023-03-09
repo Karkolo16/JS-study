@@ -18,6 +18,12 @@ h1{
 
 }
 
+.gallery{
+    display: flex;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
+
 .thumbnail{
     max-height: 200px;
     max-width: 300px;
