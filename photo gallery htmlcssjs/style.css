@@ -70,3 +70,8 @@ h1{
     left: 0;
     top: 0;
 }
+
+.popup__img{
+    max-height: 80%;
+    max-width: 80%;
+}
