@@ -61,3 +61,12 @@ h1{
     width: 100%;
     object-fit: cover;
 }
+
+.popup{
+    background:rgba(0,0,0, 0.5);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+}
