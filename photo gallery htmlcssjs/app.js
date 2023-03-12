@@ -2,4 +2,9 @@
 
 const thumbnails = document.querySelectorAll(".thumbnail img");
 
-thumbnails.forEach(() => {});
+thumbnails.forEach((thumbnail) => {
+
+    thumbnail.addEventListener('click', () =>{
+        console.log(thumbnail)
+    })
+});
