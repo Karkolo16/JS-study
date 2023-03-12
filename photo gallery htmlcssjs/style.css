@@ -80,3 +80,7 @@ h1{
     max-height: 80%;
     max-width: 80%;
 }
+
+.popup.hidden{
+    display: none;
+}
