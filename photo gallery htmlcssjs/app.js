@@ -1,6 +1,7 @@
 'use strict'
 
 const thumbnails = document.querySelectorAll(".thumbnail img");
+const popup = document.querySelector(".popup")
 
 thumbnails.forEach((thumbnail) => {
 
@@ -8,3 +9,4 @@ thumbnails.forEach((thumbnail) => {
         console.log(thumbnail)
     })
 });
+
