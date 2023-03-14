@@ -6,7 +6,7 @@ const popup = document.querySelector(".popup")
 thumbnails.forEach((thumbnail) => {
 
     thumbnail.addEventListener('click', () =>{
-        console.log(thumbnail)
+        popup.classList.remove("hidden")
     })
 });
 
