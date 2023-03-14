@@ -11,3 +11,6 @@ thumbnails.forEach((thumbnail) => {
     })
 });
 
+popup_close.addEventListener('click',  () =>{
+    popup.classList.add("hidden");
+})
