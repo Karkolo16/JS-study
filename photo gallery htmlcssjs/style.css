@@ -84,3 +84,14 @@ h1{
 .popup.hidden{
     display: none;
 }
+
+.popup__close{
+    position: fixed;
+    top:64px;
+    right: 64px;
+    font-size: 128px;
+    background-color: transparent;
+    color:rgba(255,255,255, 0.5);
+    border: none;
+    cursor: pointer;
+}
