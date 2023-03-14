@@ -4,7 +4,10 @@ const thumbnails = document.querySelectorAll(".thumbnail img");
 const popup = document.querySelector(".popup");
 const popup_close = document.querySelector(".popup__close");
 const popup_img= document.querySelector(".popup__img");
-const arrowLeft = document.querySelector(".popup__arrow--left")
+const arrowLeft = document.querySelector(".popup__arrow--left");
+const arrowRight = document.querySelector(".popup__arrow--right");
+
+
 
 thumbnails.forEach((thumbnail) => {
 
