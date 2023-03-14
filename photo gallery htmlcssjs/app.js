@@ -21,3 +21,6 @@ popup_close.addEventListener('click',  () =>{
     popup.classList.add("hidden");
 });
 
+arrowRight.addEventListener('click', ()=>{
+    
+});
