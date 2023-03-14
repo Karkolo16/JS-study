@@ -95,3 +95,23 @@ h1{
     border: none;
     cursor: pointer;
 }
+
+.popup__arrow{
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    font-size: 128px;
+    border: none;
+    line-height: 128px;
+    border-radius: 50%;
+    top:50%;
+    cursor: pointer;
+}
+
+.popup__arrow--left{
+    left:5%;
+}
+
+.popup__arrow--right{
+    right: 5%;
+}
