@@ -23,5 +23,11 @@ popup_close.addEventListener('click',  () =>{
 });
 
 arrowRight.addEventListener('click', ()=>{
+    currentImgIndex ++;
+    popup_img.src = thumbnails[currentImgIndex].src;
+});
 
+arrowLeft.addEventListener('click', ()=>{
+    currentImgIndex --;
+    popup_img.src = thumbnails[currentImgIndex].src;
 });
