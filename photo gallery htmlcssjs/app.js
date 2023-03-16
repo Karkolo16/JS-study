@@ -9,11 +9,12 @@ const arrowRight = document.querySelector(".popup__arrow--right");
 
 let currentImgIndex;
 
-thumbnails.forEach((thumbnail) => {
+thumbnails.forEach((thumbnail, index) => {
 
     thumbnail.addEventListener('click', (e) =>{
         popup.classList.remove("hidden");
         popup_img.src = e.target.src;
+        currentImgIndex = index;
     })
 });
 
