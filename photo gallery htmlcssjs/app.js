@@ -20,7 +20,17 @@ else {
 popup_img.src = thumbnails[currentImgIndex].src;
 };
 
+const showPreviousImg = () => {
+    if (currentImgIndex === 0){
+        currentImgIndex = thumbnails.length - 1;
+    }
+    else {
+        currentImgIndex --;
+    }
+    popup_img.src = thumbnails[currentImgIndex].src;
+}
 
+//
 thumbnails.forEach((thumbnail, index) => {
 
     thumbnail.addEventListener('click', (e) =>{
@@ -36,15 +46,7 @@ popup_close.addEventListener('click',  () =>{
 
 arrowRight.addEventListener('click', showNextImg);
 
-arrowLeft.addEventListener('click', ()=>{
-    if (currentImgIndex === 0){
-        currentImgIndex = thumbnails.length - 1;
-    }
-    else {
-        currentImgIndex --;
-    }
-    popup_img.src = thumbnails[currentImgIndex].src;
-});
+arrowLeft.addEventListener('click', showPreviousImg);
 
 //dodanie funkcji gdzie mogę strzalkami na klwaiaturze zmieniac obrazy
 
