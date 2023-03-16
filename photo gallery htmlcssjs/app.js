@@ -23,7 +23,12 @@ popup_close.addEventListener('click',  () =>{
 });
 
 arrowRight.addEventListener('click', ()=>{
-    currentImgIndex ++;
+    if (currentImgIndex === thumbnails.length - 1 ){
+        currentImgIndex = 0;
+    }
+    else {
+        currentImgIndex ++;
+    }
     popup_img.src = thumbnails[currentImgIndex].src;
 });
 
