@@ -33,6 +33,11 @@ arrowRight.addEventListener('click', ()=>{
 });
 
 arrowLeft.addEventListener('click', ()=>{
-    currentImgIndex --;
+    if (currentImgIndex === 0){
+        currentImgIndex = thumbnails.length - 1;
+    }
+    else {
+        currentImgIndex --;
+    }
     popup_img.src = thumbnails[currentImgIndex].src;
 });
