@@ -45,12 +45,19 @@ popup_close.addEventListener('click',  () =>{
 });
 
 arrowRight.addEventListener('click', showNextImg);
-
 arrowLeft.addEventListener('click', showPreviousImg);
 
 //dodanie funkcji gdzie mogę strzalkami na klwaiaturze zmieniac obrazy
 
 document.addEventListener('keydown', (e) =>{
-    if (e.code === "ArrowRight");
+    if (e.code === "ArrowRight"){
     showNextImg();
+    }
+    
+
+    if (e.code === "ArrowLeft"){
+        showPreviousImg();
+    }
+    
 });
+
