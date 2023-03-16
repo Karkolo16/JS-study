@@ -50,4 +50,5 @@ arrowLeft.addEventListener('click', ()=>{
 
 document.addEventListener('keydown', (e) =>{
     if (e.code === "ArrowRight");
+    showNextImg();
 });
