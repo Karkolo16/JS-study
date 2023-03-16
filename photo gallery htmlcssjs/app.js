@@ -7,7 +7,7 @@ const popup_img= document.querySelector(".popup__img");
 const arrowLeft = document.querySelector(".popup__arrow--left");
 const arrowRight = document.querySelector(".popup__arrow--right");
 
-
+let currentImgIndex;
 
 thumbnails.forEach((thumbnail) => {
 
@@ -22,5 +22,5 @@ popup_close.addEventListener('click',  () =>{
 });
 
 arrowRight.addEventListener('click', ()=>{
-    
+
 });
