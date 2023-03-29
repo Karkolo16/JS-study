@@ -16,21 +16,19 @@ let hideActiveSlide = () => {
 };
 
 let showSlide = (slideNumber) => {
+  hideActiveSlide();
   document.querySelector("#slide" + slideNumber).classList.add("active");
 };
 
 let showSlide2 = () => {
-  hideActiveSlide();
   showSlide(2);
 };
 
 let showSlide1 = () => {
-  hideActiveSlide();
   showSlide(1);
 };
 
 let showSlide3 = () => {
-  hideActiveSlide();
   showSlide(3);
 };
 
