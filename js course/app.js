@@ -10,21 +10,23 @@ let slide1 = document.querySelector("#slide1");
 let slide2 = document.querySelector("#slide2");
 let slide3 = document.querySelector("#slide3");
 
-let showSlide2 = () => {
+let hideActiveSlide = () => {
   let activeElement = document.querySelector(".active");
   activeElement.classList.remove("active");
+};
+
+let showSlide2 = () => {
+  hideActiveSlide();
   slide2.classList.add("active");
 };
 
 let showSlide1 = () => {
-  let activeElement = document.querySelector(".active");
-  activeElement.classList.remove("active");
+  hideActiveSlide();
   slide1.classList.add("active");
 };
 
 let showSlide3 = () => {
-  let activeElement = document.querySelector(".active");
-  activeElement.classList.remove("active");
+  hideActiveSlide();
   slide3.classList.add("active");
 };
 
