@@ -29,5 +29,5 @@ let showSlide3 = () => {
 };
 
 dot2.addEventListener("click", showSlide2);
-dot2.addEventListener("click", showSlide1);
-dot2.addEventListener("click", showSlide3);
+dot1.addEventListener("click", showSlide1);
+dot3.addEventListener("click", showSlide3);
