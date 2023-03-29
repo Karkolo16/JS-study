@@ -10,3 +10,5 @@ let dot3 = document.querySelector("#dot3");
 let slide1 = document.querySelector("#slide1");
 let slide2 = document.querySelector("#slide2");
 let slide3 = document.querySelector("#slide3");
+
+dot2.addEventListener("click", () => {});
