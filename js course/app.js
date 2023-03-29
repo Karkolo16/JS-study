@@ -11,6 +11,9 @@ let slide2 = document.querySelector("#slide2");
 let slide3 = document.querySelector("#slide3");
 
 let showSlide2 = () => {
+  let activeElement = document.querySelector(".active");
+
+  activeElement.classList.remove("active");
   slide2.classList.add("active");
 };
 
