@@ -1,5 +1,6 @@
-let myFirstFunction = () => {
-  console.log("Hej!");
+let myFirstFunction = (greetings) => {
+  console.log(greetings);
 };
 
-myFirstFunction();
+myFirstFunction("Witaj!");
+myFirstFunction("Cześć");
