@@ -15,19 +15,23 @@ let hideActiveSlide = () => {
   activeElement.classList.remove("active");
 };
 
+let showSlide = (slideNumber) => {
+  document.querySelector("#slide" + slideNumber).classList.add("active");
+};
+
 let showSlide2 = () => {
   hideActiveSlide();
-  slide2.classList.add("active");
+  showSlide(2);
 };
 
 let showSlide1 = () => {
   hideActiveSlide();
-  slide1.classList.add("active");
+  showSlide(1);
 };
 
 let showSlide3 = () => {
   hideActiveSlide();
-  slide3.classList.add("active");
+  showSlide(3);
 };
 
 dot2.addEventListener("click", showSlide2);
