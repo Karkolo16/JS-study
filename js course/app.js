@@ -1,5 +1,6 @@
-let arrowLeft = document.querySelector(".arrow-left");
+let activeSlideNumber = 1;
 
+let arrowLeft = document.querySelector(".arrow-left");
 let arrowRight = document.querySelector(".arrow-right");
 
 let dot1 = document.querySelector("#dot1");
@@ -32,10 +33,14 @@ let showSlide3 = () => {
   showSlide(3);
 };
 
+let showNextSlide = () => {
+  activeSlideNumber = activeSlideNumber + 1;
+
+  showSlide(activeSlideNumber);
+};
+
 dot2.addEventListener("click", showSlide2);
 dot1.addEventListener("click", showSlide1);
 dot3.addEventListener("click", showSlide3);
 
 arrowRight.addEventListener("click", showNextSlide);
-
-let showNextSlide = () => {};
