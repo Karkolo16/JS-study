@@ -22,14 +22,17 @@ let showSlide = (slideNumber) => {
 };
 
 let showSlide2 = () => {
+  activeSlideNumber = 2;
   showSlide(2);
 };
 
 let showSlide1 = () => {
+  activeSlideNumber = 1;
   showSlide(1);
 };
 
 let showSlide3 = () => {
+  activeSlideNumber = 3;
   showSlide(3);
 };
 
