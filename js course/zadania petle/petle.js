@@ -3,4 +3,4 @@ let nOddNumbers = (n) => {
     console.log(2 * i - 1);
   }
 };
-nOddNumbers(5);
+nOddNumbers(7);
