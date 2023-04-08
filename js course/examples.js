@@ -3,7 +3,9 @@ console.log(bool);
 
 let isBiggerThanTen = (number) => {
   if (number > 10) {
-    console.log(true);
+    console.log("true");
+  } else {
+    console.log("wieksza od 10");
   }
 };
-isBiggerThanTen(20);
+isBiggerThanTen(5);
