@@ -42,8 +42,18 @@ let showNextSlide = () => {
   showSlide(activeSlideNumber);
 };
 
+let showPreviousSlide = () => {
+  if (activeSlideNumber === 1) {
+    activeSlideNumber = 3;
+  } else {
+    activeSlideNumber = activeSlideNumber - 1;
+  }
+  showSlide(activeSlideNumber);
+};
+
 dot2.addEventListener("click", showSlide2);
 dot1.addEventListener("click", showSlide1);
 dot3.addEventListener("click", showSlide3);
 
 arrowRight.addEventListener("click", showNextSlide);
+arrowLeft.addEventListener("click", showPreviousSlide);
