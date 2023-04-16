@@ -1,3 +1,8 @@
 .color {
   background-color: black;
 }
+
+div {
+  margin: auto;
+  padding-top: 10px;
+}
