@@ -36,6 +36,8 @@ function quoteGenerator() {
     "-" + quotes[randomNumber].author + "-";
 }
 
+//przycisk wywolujacy cala funkcje
+
 btn.addEventListener('click', function () {
   quoteGenerator();
 });
