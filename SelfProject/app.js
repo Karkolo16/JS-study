@@ -18,3 +18,7 @@ let quotes = [
     quote: "la la lavida loca",
   },
 ];
+
+//znajdz przycisk toggle
+let btn = document.getElementById("#toggle");
+console.log(btn);
