@@ -21,4 +21,8 @@ let quotes = [
 
 //znajdz przycisk toggle
 let btn = document.getElementById("#toggle");
-console.log(btn);
+
+//funkcja losujaca cytaty
+function randomSelector(arrayLength) {
+  Math.floor(Math.random * arrayLength);
+}
