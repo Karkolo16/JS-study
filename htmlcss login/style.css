@@ -112,6 +112,13 @@ button:hover:after {
   left: 110%;
 }
 
+.form-icon {
+  height: 72px;
+  width: 72px;
+  border: solid 3px;
+  border-radius: 50%;
+}
+
 .spacer {
   height: 2px;
   background: rgba(255, 255, 255, 0.55);
