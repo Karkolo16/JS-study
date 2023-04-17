@@ -115,8 +115,36 @@ button:hover:after {
 .form-icon {
   height: 72px;
   width: 72px;
-  border: solid 3px;
+  border: solid 3px rgba(255, 255, 255, 0.6);
   border-radius: 50%;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.5);
+  margin: 0 auto 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-icon:before {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  content: "";
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 24px;
+  bottom: 0;
+}
+
+.form-icon::after {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  bottom: 40%;
 }
 
 .spacer {
