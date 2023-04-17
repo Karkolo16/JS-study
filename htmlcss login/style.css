@@ -22,6 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 form {
@@ -36,6 +37,8 @@ form {
   border-radius: 15px;
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
+  max-width: 100%;
+  overflow-y: auto;
 }
 
 .form_input-container {
