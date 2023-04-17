@@ -67,4 +67,11 @@ label {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  transition: left 0.3s, opacity 0.3s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  left: 200px;
+  opacity: 0;
 }
