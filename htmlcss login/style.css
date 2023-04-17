@@ -177,6 +177,7 @@ button:hover:after {
   height: 50vh;
   position: absolute;
   width: 50vh;
+  animation: move1 10s linear infinite;
 }
 
 .dot:nth-child(2) {
@@ -186,4 +187,23 @@ button:hover:after {
   left: 50%;
   width: 30vh;
   top: 50%;
+  animation: move2 15s linear infinite;
+}
+
+@keyframes move1 {
+  from {
+    transform: translateY(-50vh);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes move2 {
+  from {
+    transform: translateY(50vh);
+  }
+  to {
+    transform: translateY(-30vh);
+  }
 }
