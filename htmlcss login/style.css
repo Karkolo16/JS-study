@@ -111,3 +111,10 @@ button:after {
 button:hover:after {
   left: 110%;
 }
+
+.spacer {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.55);
+  margin: 0 auto 32px;
+  width: 80%;
+}
