@@ -204,6 +204,6 @@ button:hover:after {
     transform: translateY(50vh);
   }
   to {
-    transform: translateY(-30vh);
+    transform: translateY(-80vh);
   }
 }
