@@ -1,0 +1,18 @@
+#jeden,
+#dwa,
+#trzy {
+  padding: 100px;
+  background-color: white;
+}
+
+#jeden {
+  border: 1px solid black;
+}
+
+#dwa {
+  border: 1px solid burlywood;
+}
+
+#trzy {
+  border: 1px solid red;
+}
