@@ -60,6 +60,13 @@ document.querySelector("#add-contact").addEventListener("click", () => {
 
 document.querySelector("#contacts").addEventListener("click", (event) => {
   if (event.target.tagName === "IMG") {
+    const trashes = [...document.querySelectorAll(".contact-remove img")];
+    const elementIndex = trashes.indexOf(event.target);
+
+    contactList = contactList.filter((el, index) => {
+      return index !== elementIndex;
+    });
+    renderContacts();
   }
 });
 
