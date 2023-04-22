@@ -59,7 +59,8 @@ document.querySelector("#add-contact").addEventListener("click", () => {
 });
 
 document.querySelector("#contacts").addEventListener("click", (event) => {
-  console.log("klik");
+  if (event.target.tagName === "IMG") {
+  }
 });
 
 renderContacts();
