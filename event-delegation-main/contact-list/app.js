@@ -53,6 +53,10 @@ document.querySelectorAll(".contact-remove img").forEach((element) => {
   element.addEventListener("click", () => {
     const trashes = [...document.querySelectorAll(".contact-remove img")];
     const elementIndex = trashes.indexOf(element);
-    console.log(elementIndex);
+
+    contactList = contactList.filter((el, index) => {
+      return index !== elementIndex;
+    });
+    renderContacts();
   });
 });
