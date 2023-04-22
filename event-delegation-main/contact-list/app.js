@@ -47,17 +47,10 @@ document.querySelector("#add-contact").addEventListener("click", () => {
   phoneNumberField.value = "";
 });
 
-document.querySelector("#contacts").addEventListener("click", (event) => {
-  if (event.target.tagName === "IMG") {
-    const trashes = [...document.querySelectorAll(".contact-remove img")];
-    const elementIndex = trashes.indexOf(event.target);
-
-    contactList = contactList.filter((el, index) => {
-      return index !== elementIndex;
-    });
-
-    renderContacts();
-  }
-});
-
 renderContacts();
+
+document.querySelectorAll(".contact-remove img").forEach((element) => {
+  element.addEventListener("click", () => {
+    console.log("asdas");
+  });
+});
