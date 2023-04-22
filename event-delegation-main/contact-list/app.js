@@ -28,8 +28,19 @@ const renderContacts = () => {
 
     contactsContainer.innerHTML += newContact;
   });
-};
 
+  document.querySelectorAll(".contact-remove img").forEach((element) => {
+    element.addEventListener("click", () => {
+      const trashes = [...document.querySelectorAll(".contact-remove img")];
+      const elementIndex = trashes.indexOf(element);
+
+      contactList = contactList.filter((el, index) => {
+        return index !== elementIndex;
+      });
+      renderContacts();
+    });
+  });
+};
 document.querySelector("#add-contact").addEventListener("click", () => {
   const nameField = document.querySelector("#name");
   const phoneNumberField = document.querySelector("#phone-number");
@@ -48,15 +59,3 @@ document.querySelector("#add-contact").addEventListener("click", () => {
 });
 
 renderContacts();
-
-document.querySelectorAll(".contact-remove img").forEach((element) => {
-  element.addEventListener("click", () => {
-    const trashes = [...document.querySelectorAll(".contact-remove img")];
-    const elementIndex = trashes.indexOf(element);
-
-    contactList = contactList.filter((el, index) => {
-      return index !== elementIndex;
-    });
-    renderContacts();
-  });
-});
