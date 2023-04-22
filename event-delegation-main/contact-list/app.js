@@ -58,4 +58,8 @@ document.querySelector("#add-contact").addEventListener("click", () => {
   phoneNumberField.value = "";
 });
 
+document.querySelector("#contacts").addEventListener("click", (event) => {
+  console.log("klik");
+});
+
 renderContacts();
